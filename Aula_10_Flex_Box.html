@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./arqivos/Aula_1_Flex_Box.css" />
+    <title>Flex basis</title>
+
+    <style>
+        .flex {
+            display: flex; /* 1 até 8 */
+            /*flex-direction: row-reverse; --> 8 até 1;
+            flex-direction: column --> ordenar em colunas; */
+        }
+
+        .flex .item {
+            flex-basis: 150px; /*manipular tamanho no html mesmo com o tamanho especificado no width no css;
+            se colocar !important no width do css ele irá utilizar como prioridade*/
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- FlexBox faz parte da especificação do CSS3. Permite organizar os elementos na página;
+    Facilita a organização dos itens na página web;
+    Cross Axis= eixo vertical;
+    Main Axis=  eixo horizontal;
+    -->
+
+    <main class="flex">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <!--<div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div> -->
+    </main>
+</body>
+
+</html>

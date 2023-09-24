@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./arqivos/Aula_1_Flex_Box.css" />
+    <title>Align items</title>
+
+    <style>
+        .flex {
+            display: flex; /* 1 até 8, flex trabalha com os "filhos" */
+            /*flex-direction: row; já vem como padrão*/
+            /*align-items: flex-start; itens ordenados da esquerda para direita, de cima para baixo;
+            align-items: flex-end; itens ordenados da esquerda para a direita, de baixo para cima;
+            align-items: center; centraliza os itens no meio da esquerda para a direita;
+            align-items: stretch; ordena os itens da esqueda para a direita ocupando todo o espaço na vertical;
+            */align-items: baseline; /*alinhado pela fonte (exemplo a utilizar junto no .flex .item:nth-of-type()*/
+        }
+
+        .flex .item:nth-of-type(2) {
+            font-size: 10rem;
+        }
+
+        .flex .item:nth-of-type(4) {
+            font-size: 20rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- FlexBox faz parte da especificação do CSS3. Permite organizar os elementos na página;
+    Facilita a organização dos itens na página web;
+    Cross Axis= eixo vertical;
+    Main Axis=  eixo horizontal;
+    -->
+
+    <!--Align items: alinhar os itens no Main Axis: eixo horizontal-->
+
+    <main class="flex">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+    </main>
+</body>
+
+</html>

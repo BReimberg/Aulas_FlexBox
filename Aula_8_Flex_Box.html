@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./arqivos/Aula_1_Flex_Box.css" />
+    <title>Flex shrink</title>
+
+    <style>
+        .flex {
+            display: flex; /* 1 até 8 */
+            /*flex-direction: row-reverse; --> 8 até 1;
+            flex-direction: column --> ordenar em colunas;
+            flex shrink diminui os itens*/   
+        }
+
+        .flex .item:nth-of-type(1) {
+            background: rgb(189, 161, 5);
+            flex-shrink: 20;
+        }
+
+        .flex .item:nth-of-type(3) {
+            background: green;
+            flex-shrink: 15;
+        }
+
+        .flex .item:nth-of-type(6) {
+            background: purple;
+            flex-shrink: 10;
+        }
+
+        .flex .item:nth-of-type(9) {
+            background: blue;
+            flex-shrink: 5;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- FlexBox faz parte da especificação do CSS3. Permite organizar os elementos na página;
+    Facilita a organização dos itens na página web;
+    Cross Axis= eixo vertical;
+    Main Axis=  eixo horizontal;
+    -->
+
+    <main class="flex">
+        <!-- div.iten{$}*8 -->
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+    </main>
+</body>
+
+</html>

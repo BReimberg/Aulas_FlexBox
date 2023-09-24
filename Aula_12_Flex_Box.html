@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./arqivos/Aula_1_Flex_Box.css" />
+    <title>Menu</title>
+
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            font-size: 2.5rem;
+            list-style: none;
+
+            display: flex;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- FlexBox faz parte da especificação do CSS3. Permite organizar os elementos na página;
+    Facilita a organização dos itens na página web;
+    Cross Axis= eixo vertical;
+    Main Axis=  eixo horizontal;
+    -->
+    <header class="flex">
+        <nav>
+            <img src="https://vidafullstack.com.br/wp-content/uploads/2019/08/logo-4.png"alt=""">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+
+                <li>
+                    <a href="#">Sobre</a>
+                </li>
+
+                <li>
+                    <a href="#">Portifólio</a>
+                </li>
+
+                <li>
+                    <a href="#">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+</body>
+
+</html>
